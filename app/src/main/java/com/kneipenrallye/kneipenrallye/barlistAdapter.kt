@@ -1,5 +1,6 @@
 package com.kneipenrallye.kneipenrallye
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,4 +40,12 @@ class barlistAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHo
 
 class CustomViewHolder(val view: View): RecyclerView.ViewHolder(view) {
 
+    init {
+        view.setOnClickListener {
+            println("Clicked on Viewholder")
+
+            val intent = Intent(view.context, barDetailActivity::class.java)
+            view.context.startActivity(intent)
+        }
+    }
 }
