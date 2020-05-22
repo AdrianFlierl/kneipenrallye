@@ -1,0 +1,18 @@
+{
+    "bars" :
+    [
+        {
+            "id":1,
+            "name":"Mono",
+            "description":"def",
+            "link":""
+        },
+        {
+            "id":2,
+            "name":"Sax",
+            "description":"abc",
+            "link":""
+        }
+    
+    ]
+}
