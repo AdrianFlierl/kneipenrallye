@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.barlist_item.view.*
 
 class barlistAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHolder>(){
@@ -26,8 +27,11 @@ class barlistAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHo
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         //val bar = barTitle.get(position)
         val barObj = homeFeed.bars.get(position)
-        holder?.view?.txt_bar_name?.text = barObj.name
-        holder?.view?.txt_bar_description?.text = barObj.description
+        holder.view.txt_bar_name?.text = barObj.name
+        holder.view.txt_bar_description?.text = barObj.description
+
+        val barImageView = holder.view.imgView_bar
+        Picasso.get().load(barObj.link).into(barImageView)
     }
 
 }

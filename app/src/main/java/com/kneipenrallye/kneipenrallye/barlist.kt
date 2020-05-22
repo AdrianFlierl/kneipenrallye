@@ -28,6 +28,7 @@ class barlist : AppCompatActivity() {
         println("Try to fetch JSON")
 
         val url = "https://xtd.myqnapcloud.com:8443/bars.json"
+        //val url = "http://nas/bars.json"
 
         val request = Request.Builder().url(url).build()
 
@@ -55,18 +56,3 @@ class barlist : AppCompatActivity() {
 
 }
 
-// JSON FILE
-//{
-//    "bars":[
-//    {
-//        "id":1,
-//        "name":"Mono",
-//        "description":"def",
-//        "link":""
-//    }
-//    ]
-//}
-
-class HomeFeed(val bars: List<Bars>)
-
-class Bars(val id: Int, val name: String, val description: String, val link: String)
