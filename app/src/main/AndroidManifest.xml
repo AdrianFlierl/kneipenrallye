@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kneipenrallye">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
 
         android:allowBackup="true"
@@ -10,6 +12,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Account">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Account" />
+        </activity>
+        <activity android:name=".Registration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registration" />
+        </activity>
+        <activity
+            android:name=".barlist"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".barlist" />
+        </activity>
+        <activity
+            android:name=".barDetailActivity"
+            android:label="Bar Detail"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".barlist" />
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

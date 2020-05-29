@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">kneipenrallye</string>
+
+    <string-array name="faculties_en">
+        <item>Applied Natural Sciences and Cultural Studies</item>
+        <item>Architecture</item>
+        <item>Civil Engineering</item>
+        <item>Business Studies</item>
+        <item>Electrical Engineering and Information Technology</item>
+        <item>Computer Science and Mathematics</item>
+        <item>Mechanical Engineering</item>
+        <item>Social and Health Care Sciences</item>
+    </string-array>
+
+    <string-array name="faculties_de">
+        <item>Angewandte Natur- und Kulturwissenschaften</item>
+        <item>Architektur</item>
+        <item>Bauingeniuerwesen</item>
+        <item>Betriebswirtschaft</item>
+        <item>Elektro- und Informationstechnik</item>
+        <item>Informatik und Mathematik</item>
+        <item>Maschinenbau</item>
+        <item>Angewandte Sozial- und Gesundheitswissenschaften</item>
+    </string-array>
 </resources>
