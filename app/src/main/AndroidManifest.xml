@@ -11,19 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Account">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Account" />
+        </activity>
+        <activity android:name=".Registration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registration" />
+        </activity>
         <activity
             android:name=".barlist"
-            android:parentActivityName=".MainActivity"
-            android:launchMode="singleTop">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".barlist"/>
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".barlist" />
         </activity>
         <activity
             android:name=".barDetailActivity"
             android:label="Bar Detail"
             android:launchMode="singleTop">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".barlist"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".barlist" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "718001323346",
+    "firebase_url": "https://kneipenrallye-rbg.firebaseio.com",
+    "project_id": "kneipenrallye-rbg",
+    "storage_bucket": "kneipenrallye-rbg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718001323346:android:07c2315e2d32030f61ce8b",
+        "android_client_info": {
+          "package_name": "com.kneipenrallye.kneipenrallye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718001323346-vbn473257un84cdfdaiq72viuule18bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZlwVHPOqibgR8iINdgmNIj7VNsAUJsLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718001323346-vbn473257un84cdfdaiq72viuule18bm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
