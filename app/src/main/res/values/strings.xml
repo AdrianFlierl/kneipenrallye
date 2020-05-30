@@ -22,4 +22,5 @@
         <item>Maschinenbau</item>
         <item>Angewandte Sozial- und Gesundheitswissenschaften</item>
     </string-array>
+    <string name="title_activity_maps">Kneipenraylle Livemap</string>
 </resources>

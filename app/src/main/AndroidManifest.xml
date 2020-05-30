@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kneipenrallye.kneipenrallye">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,16 +17,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+
         <activity android:name=".Account">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Account" />
         </activity>
+
         <activity android:name=".Registration">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Registration" />
         </activity>
+
         <activity
             android:name=".barlist"
             android:launchMode="singleTop"
@@ -29,6 +47,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".barlist" />
         </activity>
+
         <activity
             android:name=".barDetailActivity"
             android:label="Bar Detail"
@@ -37,6 +56,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".barlist" />
         </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +64,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
