@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_registration.*
 
-class Registration : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 

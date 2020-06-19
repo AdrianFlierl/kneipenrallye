@@ -10,7 +10,7 @@ import okhttp3.*
 import java.io.IOException
 
 
-class barlist : AppCompatActivity() {
+class BarlistActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
