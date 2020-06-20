@@ -1,22 +1,38 @@
 package com.kneipenrallye.kneipenrallye
 
+import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
+import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.iid.FirebaseInstanceId
+
+import com.pixplicity.easyprefs.library.Prefs
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+open class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         News.globalContext = this.applicationContext
+        // Initialize the Prefs class
+        Prefs.Builder()
+            .setContext(this)
+            .setMode(ContextWrapper.MODE_PRIVATE)
+            .setPrefsName(packageName)
+            .setUseDefaultSharedPreference(true)
+            .build()
+
+        Prefs.putString(SettingsActivity.USERNAME, "Adi2")
 
 
         btn_livemap.setOnClickListener{
@@ -36,6 +52,13 @@ class MainActivity : AppCompatActivity() {
 
         btn_main_reg.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, "message");
+            }
+            startActivity(intent);
+        }
+
+        btn_settings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java).apply {
                 putExtra(AlarmClock.EXTRA_MESSAGE, "message");
             }
             startActivity(intent);
