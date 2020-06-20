@@ -23,16 +23,31 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".AccountActivity">
+            android:label="@string/title_activity_maps" />
+
+        <activity
+            android:name=".AccountActivity"
+            android:label="Account"
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AccountActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".RegistrationActivity">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RegistrationActivity" />
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".BarlistActivity"
@@ -40,12 +55,13 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".BarlistActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".BardetailActivity"
             android:label="Bar Detail"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:parentActivityName=".BarlistActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BarlistActivity" />
@@ -53,7 +69,8 @@
         <activity
             android:name=".News"
             android:label="News Feed"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:parentActivityName=".BarlistActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
