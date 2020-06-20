@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">kneipenrallye</string>
 
+
     <string-array name="faculties_en">
         <item>Applied Natural Sciences and Cultural Studies</item>
         <item>Architecture</item>
@@ -23,4 +24,5 @@
         <item>Angewandte Sozial- und Gesundheitswissenschaften</item>
     </string-array>
     <string name="title_activity_maps">Kneipenraylle Livemap</string>
+    <string name="msg_token_fmt">abc</string>
 </resources>

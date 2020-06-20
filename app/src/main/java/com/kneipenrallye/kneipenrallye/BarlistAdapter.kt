@@ -54,7 +54,7 @@ class CustomViewHolder(val view: View, var bars: Bars? = null): RecyclerView.Vie
         view.setOnClickListener {
             println("Clicked on Viewholder")
 
-            val intent = Intent(view.context, barDetailActivity::class.java)
+            val intent = Intent(view.context, BardetailActivity::class.java)
 
             intent.putExtra(BAR_EXTRA_KEY, "test")
             intent.putExtra(BAR_TITLE_KEY, bars?.name)

@@ -9,7 +9,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_bar_detail.*
 import kotlinx.android.synthetic.main.barlist_item.view.*
 
-class barDetailActivity : AppCompatActivity() {
+class BardetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

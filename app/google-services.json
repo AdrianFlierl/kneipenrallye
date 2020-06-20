@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "718001323346-6d6nrpo1al5b4d8sa9doq1q7e1mju0hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kneipenrallye.kneipenrallye",
+            "certificate_hash": "6695bb8faaf835b8cd336dc7fd298ae8eed8c084"
+          }
+        },
+        {
           "client_id": "718001323346-vbn473257un84cdfdaiq72viuule18bm.apps.googleusercontent.com",
           "client_type": 3
         }
